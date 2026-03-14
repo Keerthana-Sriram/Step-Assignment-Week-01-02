@@ -1,5 +1,5 @@
 // Parking lot using open addressing with linear probing
-
+//Java Code
 import java.util.*;
 
 public class ParkingLotHashing {
@@ -27,7 +27,7 @@ public class ParkingLotHashing {
 
     public static void exitVehicle(String plate) {
 
-        for (int i = 0; i < spots.length; i++) {
+        for (int i=0; i <spots.length; i++) {
 
             if (plate.equals(spots[i])) {
                 spots[i] = null;
@@ -38,10 +38,8 @@ public class ParkingLotHashing {
     }
 
     public static void main(String[] args) {
-
         parkVehicle("ABC1234");
         parkVehicle("ABC1235");
-
         exitVehicle("ABC1234");
     }
 }

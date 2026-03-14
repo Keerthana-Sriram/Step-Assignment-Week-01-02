@@ -1,18 +1,17 @@
-// Basic autocomplete using HashMap
-
+// Basic autocomplete
+// using Hashmap
+//Java code
 import java.util.*;
 
 public class AutocompleteSystem {
-
     static HashMap<String, Integer> queries = new HashMap<>();
-
     public static void addQuery(String q) {
         queries.put(q, queries.getOrDefault(q, 0) + 1);
     }
 
     public static void search(String prefix) {
 
-        System.out.println("Suggestions:");
+        System.out.println("Suggestions: ");
 
         for (String q : queries.keySet()) {
 
@@ -27,7 +26,6 @@ public class AutocompleteSystem {
         addQuery("java tutorial");
         addQuery("javascript");
         addQuery("java download");
-
         search("jav");
     }
 }

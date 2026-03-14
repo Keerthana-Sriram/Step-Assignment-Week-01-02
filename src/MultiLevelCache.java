@@ -1,6 +1,6 @@
 // Multi level cache system
 // simulation
-
+//Java Code
 import java.util.*;
 
 public class MultiLevelCache {
@@ -17,12 +17,12 @@ public class MultiLevelCache {
 
         if (L2.containsKey(id)) {
             L1.put(id, L2.get(id));
-            return "L2 Cache HIT → promoted to L1";
+            return "L2 Cache HIT -> promoted to L1";
         }
 
         if (L3.containsKey(id)) {
             L2.put(id, L3.get(id));
-            return "L3 DB HIT → added to L2";
+            return "L3 DB HIT -> added to L2";
         }
 
         return "Video not found";

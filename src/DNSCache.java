@@ -1,5 +1,5 @@
 // Simple DNS Cache simulation with TTL
-
+//Java Code
 import java.util.*;
 
 class DNSEntry {
