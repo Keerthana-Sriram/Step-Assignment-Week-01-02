@@ -1,5 +1,5 @@
 // Two sum detection for transactions
-
+//Java Code
 import java.util.*;
 
 class Transaction {
@@ -20,7 +20,7 @@ public class TransactionTwoSum {
 
         for (Transaction t : list) {
 
-            int complement = target - t.amount;
+            int complement = target-t.amount;
 
             if (map.containsKey(complement)) {
 

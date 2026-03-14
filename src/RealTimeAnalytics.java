@@ -1,5 +1,5 @@
 // Real time website analytics simulation
-
+//Java Code
 import java.util.*;
 
 public class RealTimeAnalytics {
@@ -9,25 +9,19 @@ public class RealTimeAnalytics {
     static HashMap<String, Integer> sources = new HashMap<>();
 
     public static void processEvent(String url, String userId, String source) {
-
         pageViews.put(url, pageViews.getOrDefault(url, 0) + 1);
-
         uniqueVisitors.putIfAbsent(url, new HashSet<>());
         uniqueVisitors.get(url).add(userId);
-
         sources.put(source, sources.getOrDefault(source, 0) + 1);
     }
 
     public static void getDashboard() {
-
         System.out.println("Top Pages:");
-
         for (String url : pageViews.keySet()) {
 
             System.out.println(url + " - " + pageViews.get(url)
                     + " views (" + uniqueVisitors.get(url).size() + " unique)");
         }
-
         System.out.println("\nTraffic Sources:");
 
         for (String s : sources.keySet()) {
@@ -40,7 +34,6 @@ public class RealTimeAnalytics {
         processEvent("/news", "user1", "google");
         processEvent("/news", "user2", "facebook");
         processEvent("/sports", "user3", "direct");
-
         getDashboard();
     }
 }

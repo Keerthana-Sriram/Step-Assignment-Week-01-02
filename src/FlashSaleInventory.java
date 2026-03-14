@@ -1,6 +1,6 @@
 // Program to simulate a flash sale inventory manager
 // using HashMap for fast stock lookup
-
+//Java Code
 import java.util.*;
 
 public class FlashSaleInventory {

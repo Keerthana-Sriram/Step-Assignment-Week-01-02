@@ -1,5 +1,5 @@
 // Basic plagiarism detection using n-grams and HashMap
-
+//Java Code
 import java.util.*;
 
 public class PlagiarismDetector {

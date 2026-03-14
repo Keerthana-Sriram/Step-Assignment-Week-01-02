@@ -1,7 +1,7 @@
-// Simple program to simulate a Social Media Username Availability Checker
+// Program to simulate a Social Media Username Availability Checker
 // Idea: use HashMap for fast O(1) lookup of usernames
 // Also keep track of how many times people tried a username
-
+//Java code
 import java.util.*;
 
 class Username {
